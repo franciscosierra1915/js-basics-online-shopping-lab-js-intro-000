@@ -39,7 +39,7 @@ function total() {
   for(var i = 0 ; i < cart.length; i++) {
     totalFrank += cart[i].itemPrice;
   }
-  return total;
+  return totalFrank;
 }
 
 function removeFromCart(item) {

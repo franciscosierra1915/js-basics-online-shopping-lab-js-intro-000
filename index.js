@@ -58,11 +58,12 @@ if (item != cart[item]) {
 }
 
 function placeOrder(cardNumber) {
-  if (!cardNumber) {
-    return console.log("We don't have a credit card on file for you to place your order.")
+  // write your code here
+  if (cardNumber === undefined) {
+    return "Sorry, we don't have a credit card on file for you." 
+  } else {
+    cart = [];
+    const NewTotal = total();
+    return `Your total cost is $${NewTotal}, which will be charged to the card ${cardNumber}.`;
   }
-
-  console.log(`Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`)
-
-  cart = []
 }

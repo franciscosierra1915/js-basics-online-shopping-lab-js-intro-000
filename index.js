@@ -63,7 +63,6 @@ function placeOrder(cardNumber) {
     return "Sorry, we don't have a credit card on file for you." 
   } else {
     cart = [];
-    nst NewTotal = total();
-    return `Your total cost is $${NewTotal}, which will be charged to the card ${cardNumber}.`;
+    return `Your total cost is $${Total()}, which will be charged to the card ${cardNumber}.`;
   }
 }
